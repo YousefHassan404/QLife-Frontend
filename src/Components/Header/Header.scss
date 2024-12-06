@@ -1,0 +1,150 @@
+/* Header Styles */
+header {
+  align-content: center;
+  background-color: #1f2937; /* Dark background */
+  color: #ffffff;
+  min-height: 10vh;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo h1 {
+  width: 100px;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+}
+
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  align-content: center;
+  position: relative;
+}
+
+a, .nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover, .nav-link:hover {
+  background-color: #3b82f6; /* Highlight color */
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+}
+
+.nav-link.active {
+  background-color: #2563eb; /* Active link color */
+  color: #ffffff;
+}
+
+.img-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.img-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.io-person-icon {
+  font-size: 2rem;
+  color: #ffffff;
+  transition: transform 0.3s;
+}
+
+.io-person-icon:hover {
+  transform: scale(1.1);
+}
+
+.close-comp{
+  display: none;
+}
+
+
+
+@media (max-width: 600px) {
+  .close-comp{
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+    width: 50px;
+  }
+
+  .close-nav {
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #1f2937;
+    color: #ffffff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

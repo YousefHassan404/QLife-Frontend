@@ -1,0 +1,60 @@
+.qlife-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #1e90ff;
+  }
+  
+  .qlife-header {
+    text-align: center;
+    background-color: #00bfff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+  
+  .qlife-section {
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent */
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .qlife-section h2 {
+    margin-top: 0;
+    color: #00bfff;
+  }
+  
+  .qlife-footer {
+    text-align: center;
+    background-color: #1e90ff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .qlife-container {
+      padding: 15px;
+    }
+  
+    .qlife-section {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .qlife-container {
+      padding: 10px;
+    }
+  
+    .qlife-section {
+      padding: 10px;
+    }
+  }
+  

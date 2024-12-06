@@ -1,0 +1,30 @@
+@use './import' as *;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.max{
+    width:calc(100% - 64px);
+    margin:  auto ;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
